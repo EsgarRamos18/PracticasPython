@@ -14,7 +14,7 @@ def divide(n1,n2):
 if __name__ == '__main__':
     nu1= int(input("Ingresa numero 1: \n"))
     nu2 = int(input("Ingresa numero 2: \n"))
-    message= f"\n \nCalculadora: \n Elige una opcion \n 1 - suma \n 2- resta \n 3 - multiplicacion \n 4- division \n 5- Salir \n 6-Cambiar numeros"
+    message= f"\n \nCalculadora: \n Elige una opcion \n 1 - suma \n 2- resta \n 3 - multiplicacion \n 4- division \n 5- Salir \n 6-Cambiar numeros \n"
     while True:
         opcion= int(input(message))
         if opcion == 1:
@@ -22,15 +22,19 @@ if __name__ == '__main__':
             print(f"La suma es {nu1} + {nu2} = {suma(nu1,nu2)}")
             
         elif opcion == 2:
+            os.system('clear')
             print(f"La resta es {nu1} - {nu2} = {resta(nu1,nu2)}")
             
         elif opcion == 3:
+            os.system('clear')
             print(f"La multiplicacion de {nu1} * {nu2} = {multi(nu1, nu2)}")
             
         elif opcion == 4:
+            os.system('clear')
             print(f"La divison de {nu1} / {nu2} = {divide(nu1,nu2)}")
             
         elif opcion == 5:
+            os.system('clear')
             print("bye!")
             break
         elif opcion == 6:
